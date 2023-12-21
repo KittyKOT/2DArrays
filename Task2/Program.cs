@@ -36,9 +36,9 @@ void ChangeRows(int[,] inArray)
 
 Console.Clear();
 Console.Write("Введите количество строк в массиве: ");
-int row = int.Parse(Console.ReadLine()!);
+int row = Convert.ToInt32(Console.ReadLine()!);
 Console.Write("Введите количество столбцов в массиве: ");
-int columns = int.Parse(Console.ReadLine()!);
+int columns = Convert.ToInt32(Console.ReadLine()!);
 
 int[,] array = GetArray(row, columns, 0, 10);
 PrintArray(array);
